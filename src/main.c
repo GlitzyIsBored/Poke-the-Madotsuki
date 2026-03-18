@@ -10,24 +10,25 @@ Button button;
 
 int main(void) {
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Omg Mado");
+    SetWindowIcon(LoadImage("../images/icon/Mado-icon.png"));
     InitAudioDevice();
-    
+
     setButton();
-    
+
     SetTargetFPS(30);
-    
+
     while (!WindowShouldClose()) {
         BeginDrawing();
-        
+
             ClearBackground(RAYWHITE);
             DrawText("Omgsss", 0, 0, 20, PINK);
             drawButton();
-            
+
         EndDrawing();
     }
     unloadButton();
     CloseAudioDevice();
     CloseWindow();
-    
+
     return 0;
 }
