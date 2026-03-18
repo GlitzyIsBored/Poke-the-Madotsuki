@@ -5,7 +5,7 @@
 #define Mado2 "../images/MURI.png"
 #define Outline "../images/PinkHalo.png"
 
-#define Voice1 "../images/DAME.png"
+#define Voice1 "../audios/DAME.WAV"
 #define Voice2 "../audios/MURI.WAV"
 
 typedef struct Button {

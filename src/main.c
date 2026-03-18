@@ -2,12 +2,15 @@
 #define SCREEN_WIDTH 300
 
 #include <raylib.h>
+#include <time.h>
+#include <stdlib.h>
 #include "button.c"
 
 Button button;
 
 int main(void) {
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Omg Mado");
+    InitAudioDevice();
     
     setButton();
     
@@ -17,12 +20,13 @@ int main(void) {
         BeginDrawing();
         
             ClearBackground(RAYWHITE);
-            DrawText("Omgsss", 0, 0, 20, RED);
+            DrawText("Omgsss", 0, 0, 20, PINK);
             drawButton();
             
         EndDrawing();
     }
     unloadButton();
+    CloseAudioDevice();
     CloseWindow();
     
     return 0;
