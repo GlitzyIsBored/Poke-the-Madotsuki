@@ -23,7 +23,8 @@ int main(void) {
         BeginDrawing();
 
             ClearBackground(BLANK);
-            DrawText("Omgsss", 0, 0, 20, PINK);
+            DrawText("Omgsss", 10, 10, 20, PINK);
+            DrawRectangleLines(1, 1, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1, PINK);
             drawButton();
 
         EndDrawing();

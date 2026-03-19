@@ -20,7 +20,6 @@ typedef struct Button {
 } Button;
 
 extern Button buttonState;
-extern Sound DAMEMURI;
 
 #ifdef __cplusplus
 extern "C" {
