@@ -10,7 +10,7 @@ Button button;
 
 int main(void) {
     SetConfigFlags(FLAG_WINDOW_TRANSPARENT);
-    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Omg Mado");
+    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Poke the Madotsuki");
     SetWindowIcon(LoadImage("../images/icon/Mado-icon.png"));
     //SetWindowState(FLAG_WINDOW_UNDECORATED);
     InitAudioDevice();
@@ -23,7 +23,7 @@ int main(void) {
         BeginDrawing();
 
             ClearBackground(BLANK);
-            DrawText("Omgsss", 10, 10, 20, PINK);
+            //DrawText("Poke her", 10, 10, 20, PINK);
             DrawRectangleLines(1, 1, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1, PINK);
             drawButton();
 
